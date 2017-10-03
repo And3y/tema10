@@ -12,8 +12,10 @@ body {
 .wrapper {
   height: 100vh;
   width: 100%;
-  background: #404040;
   overflow: hidden; }
+
+.tekst {
+  position: absolute; }
 
 .intro {
   font-weight: 500;
@@ -28,6 +30,88 @@ body {
 .fade-out {
   -webkit-animation: fade-out 1s ease-in-out forwards;
   animation: fade-out 1s ease-in-out forwards; }
+
+.infogfx {
+  position: absolute;
+  padding: 50px;
+  background-color: rgba(64, 64, 64, 0.97); }
+
+.norge {
+  background-image: url(../img/norge.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 90%;
+  width: 90%;
+  position: absolute; }
+
+.infotext {
+  color: #f2f2f2;
+  font-size: 31px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  position: absolute; }
+
+.kontrast {
+  color: #ffdc8c; }
+
+.slider {
+  background-image: url(../img/slider.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 90%;
+  width: 10%;
+  right: 10%;
+  position: absolute; }
+
+.parallax {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  left: 0; }
+
+.background_wrapper {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/background_layers/Sky.svg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.bgsame {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  width: 105vw;
+  height: 102vh;
+  left: -50px;
+  overflow: hidden; }
+
+.layer {
+  background-image: url(../img/background_layers/1.svg); }
+
+.layer1 {
+  background-image: url(../img/background_layers/2.svg); }
+
+.layer2 {
+  background-image: url(../img/background_layers/3.svg); }
+
+.layer3 {
+  background-image: url(../img/background_layers/4.svg); }
+
+.layer4 {
+  background-image: url(../img/background_layers/5.svg); }
+
+.layer5 {
+  background-image: url(../img/background_layers/6.svg); }
+
+.layer6 {
+  background-image: url(../img/background_layers/7.svg); }
+
+.layer7 {
+  background-image: url(../img/background_layers/8.svg); }
 
 @-webkit-keyframes fade-in {
   from {

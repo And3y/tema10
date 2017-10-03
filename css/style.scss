@@ -18,8 +18,13 @@ body {
 .wrapper {
     height: 100vh;
     width: 100%;
-    background: $black;
+//    background: $black;
     overflow: hidden;
+}
+//    Tekst
+
+.tekst {
+    position: absolute;
 }
 
 .intro {
@@ -37,6 +42,113 @@ body {
     animation: fade-out 1s ease-in-out forwards;
 }
 
+//    Kartet
+
+.infogfx {
+    position: absolute;
+    padding: 50px;
+    background-color: rgba(64, 64, 64, 0.97);
+    
+}
+
+.norge {
+    background-image: url(../img/norge.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 90%;
+    width: 90%;
+    position: absolute;
+}
+
+.infotext {
+    color: $white;
+    font-size: 31px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    position: absolute;
+}
+
+.kontrast {
+    color: $contrast;
+}
+
+.slider {
+    background-image: url(../img/slider.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 90%;
+    width: 10%;
+    right: 10%;
+    position: absolute;
+}
+
+//    Bkgrunn
+
+.parallax {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    left: 0;
+}
+
+.background_wrapper {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/background_layers/Sky.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgsame {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 105vw;
+    height: 102vh;
+    left: -50px;
+    overflow: hidden;
+}
+
+.layer {
+    background-image: url(../img/background_layers/1.svg);
+}
+
+.layer1 {
+    background-image: url(../img/background_layers/2.svg);
+}
+
+.layer2 {
+    background-image: url(../img/background_layers/3.svg);
+}
+
+.layer3 {
+    background-image: url(../img/background_layers/4.svg);
+}
+
+.layer4 {
+    background-image: url(../img/background_layers/5.svg);
+}
+
+.layer5 {
+    background-image: url(../img/background_layers/6.svg);
+}
+
+.layer6 {
+    background-image: url(../img/background_layers/7.svg);
+}
+
+.layer7 {
+    background-image: url(../img/background_layers/8.svg);
+}
+
+
+
+//    Animations
+
 @keyframes fade-in {
     from {opacity: 0};
     to {opacity: 1};
@@ -46,3 +158,4 @@ body {
     from {opacity: 1};
     to {opacity: 0};
 }
+
