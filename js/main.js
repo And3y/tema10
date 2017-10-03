@@ -1,12 +1,12 @@
-//      /$$$$$$$$ /$$$$$$$   /$$$$$$  /$$       /$$      
-//     |__  $$__/| $$__  $$ /$$__  $$| $$      | $$      
-//        | $$   | $$  \ $$| $$  \ $$| $$      | $$      
-//        | $$   | $$$$$$$/| $$  | $$| $$      | $$      
-//        | $$   | $$__  $$| $$  | $$| $$      | $$      
-//        | $$   | $$  \ $$| $$  | $$| $$      | $$      
-//        | $$   | $$  | $$|  $$$$$$/| $$$$$$$$| $$$$$$$$
+//      /######## /#######   /######  /##       /##      
+//     |__  ##__/| ##__  ## /##__  ##| ##      | ##      
+//        | ##   | ##  \ ##| ##  \ ##| ##      | ##      
+//        | ##   | #######/| ##  | ##| ##      | ##      
+//        | ##   | ##__  ##| ##  | ##| ##      | ##      
+//        | ##   | ##  \ ##| ##  | ##| ##      | ##      
+//        | ##   | ##  | ##|  ######/| ########| ########
 //        |__/   |__/  |__/ \______/ |________/|________/
-//
+
 //                                              BY Team-AAs
 
 var intro  = document.querySelectorAll('.intro');
@@ -27,31 +27,25 @@ function fadeIn(arrayName) {
 }
 
 // fade text out
-function fadeItOut(){
-    if (first[1].classList.contains('fade-in')) {
-        for (var i = 0; i < first.length; i++) {
-            first[i].classList.remove('fade-in');
-            first[i].classList.add('fade-out');
-        }
-    }
-}
-
-function fadeItOutSecond(){
-    if (second[1].classList.contains('fade-in')) {
-        for (var i = 0; i < second.length; i++) {
-            second[i].classList.remove('fade-in');
-            second[i].classList.add('fade-out');
+function fadeItOut(arrayName){
+    if (arrayName[1].classList.contains('fade-in')) {
+        for (var i = 0; i < arrayName.length; i++) {
+            arrayName[i].classList.remove('fade-in');
+            arrayName[i].classList.add('fade-out');
         }
     }
 }
 
 // Get goin'
-//setTimeout(fadeIn, 2000);
+
 setTimeout(function() {
     fadeIn(first[1]);
 }, 2000)
+
 // fade out first group
-setTimeout(fadeItOut, 4000);
+setTimeout(function() {
+    fadeItOut(first);
+}, 4000)
 
 // start of second group
 setTimeout(function() {
@@ -65,5 +59,7 @@ setTimeout(function() {
 setTimeout(function() {
     fadeIn(second[2]);
 }, 7000)
-
-setTimeout(fadeItOutSecond, 8000);
+// Fade out second group
+setTimeout(function() {
+    fadeItOut(second);
+}, 9000)
