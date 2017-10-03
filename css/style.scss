@@ -1,5 +1,14 @@
+$black: #404040;
+$white: #f2f2f2;
+$contrast: #ffdc8c;
+
 * {
     box-sizing: border-box;
+}
+
+h1, p, h2 {
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -7,6 +16,33 @@ body {
 }
 
 .wrapper {
-    height: 100%;
+    height: 100vh;
     width: 100%;
+    background: $black;
+    overflow: hidden;
+}
+
+.intro {
+    font-weight: 500;
+    color: $white;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+.fade-in {
+    animation: fade-in 1s ease-in-out forwards;
+}
+
+.fade-out {
+    animation: fade-out 1s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+    from {opacity: 0};
+    to {opacity: 1};
+}
+
+@keyframes fade-out {
+    from {opacity: 1};
+    to {opacity: 0};
 }
