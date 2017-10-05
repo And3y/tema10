@@ -18,18 +18,22 @@ body {
 .wrapper {
     height: 100vh;
     width: 100%;
-//    background: $black;
     overflow: hidden;
 }
 //    Tekst
 
 .tekst {
     position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 10%;
+    
 }
 
 .intro {
     font-weight: 500;
     color: $white;
+    text-shadow: 1px 1px 2px $black;
     text-align: center;
     letter-spacing: 1.5px;
 }
