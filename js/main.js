@@ -47,14 +47,6 @@ info.style.display = 'none';
 
 
 
-//
-//if(info.classList.contains('fade-in')) {
-//    
-//}
-
-
-
-
 function showMap() {
     info.style.display = 'block';
     fadeIn(info);

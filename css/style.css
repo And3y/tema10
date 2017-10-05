@@ -64,8 +64,8 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   height: 90%;
-  width: 10%;
-  right: 10%;
+  width: 160px;
+  right: 5%;
   position: absolute; }
 
 .parallax {
