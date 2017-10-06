@@ -12,7 +12,7 @@
 var intro = document.querySelectorAll('.intro');
 var first = document.querySelectorAll('.first-group');
 var second = document.querySelectorAll('.second-group');
-var tekst = document.querySelector('.tekst');
+var tekstOne = document.getElementById('tekst1');
 var info = document.querySelector('.infogfx');
 
 //  Hide all text
@@ -25,11 +25,12 @@ first[0].classList.add('fade-in');
 
 // reveal another line
 function fadeIn(arrayName) {
+    arrayName.classList.remove('fade-out')
     arrayName.classList.add('fade-in');
 }
 
 // fade text out
-function fadeItOut(arrayName) {
+function fadeTextOut(arrayName) {
     if (arrayName[1].classList.contains('fade-in')) {
         for (var i = 0; i < arrayName.length; i++) {
             arrayName[i].classList.remove('fade-in');
@@ -37,22 +38,30 @@ function fadeItOut(arrayName) {
         }
     }
 }
+// fade out div
+function fadeOut(className) {
+    className.classList.remove('fade-in');
+    className.classList.add('fade-out');
+}
 
 // Hide text-div
 function hideText() {
-    tekst.style.display = 'none';
+    tekstOne.style.display = 'none';
 }
 
-info.style.display = 'none';
-
-
+function hideMap() {
+    fadeOut(info)
+    info.style.display = 'none';
+}
 
 function showMap() {
     info.style.display = 'block';
     fadeIn(info);
 }
 
-// Get goin'
+// Get goin', son!
+
+hideMap(); //hide that sucker
 
 setTimeout(function () {
     fadeIn(first[1]);
@@ -60,7 +69,7 @@ setTimeout(function () {
 
 // fade out first group
 setTimeout(function () {
-    fadeItOut(first);
+    fadeTextOut(first);
 }, 4000)
 
 // start of second group
@@ -77,8 +86,19 @@ setTimeout(function () {
 }, 7000)
 // Fade out second group
 setTimeout(function () {
-    fadeItOut(second);
+    fadeTextOut(second);
 }, 9000)
-
+// show the map
 setTimeout(hideText, 11000);
 setTimeout(showMap, 11000);
+setTimeout(hideMap, 15000);
+
+// after map text
+
+setTimeout(function () {
+    fadeIn(intro[5]);
+}, 16000);
+
+setTimeout(function () {
+    fadeIn(intro[6]);
+}, 17000);
