@@ -1,12 +1,13 @@
 $black: #404040;
 $white: #f2f2f2;
 $contrast: #ffdc8c;
-
 * {
     box-sizing: border-box;
 }
 
-h1, p, h2 {
+h1,
+p,
+h2 {
     margin: 0;
     padding: 0;
 }
@@ -23,8 +24,8 @@ body {
     padding: 50px;
     background-color: rgba(64, 64, 64, 0.97);
 }
-//    Tekst
 
+//    Tekst
 .tekst {
     position: absolute;
     text-align: center;
@@ -49,12 +50,10 @@ body {
 }
 
 //    Kartet
-
 .infogfx {
     position: absolute;
     padding: 50px;
     background-color: rgba(64, 64, 64, 0.97);
-    
 }
 
 .norge {
@@ -90,7 +89,6 @@ body {
 }
 
 // Call to action
-
 #call-to-action {
     display: flex;
 }
@@ -121,8 +119,7 @@ body {
     width: 50%;
     height: 100%;
     align-items: center;
-    
-    a{
+    a {
         text-decoration: none;
         color: $white;
         font-size: 31px;
@@ -135,6 +132,10 @@ body {
     }
 }
 
+li:hover+.illustration {
+    background-image: url(../img/eventyr/askeladden_trollet.svg);
+}
+
 a:hover {
     color: $contrast;
     transition: .5s;
@@ -143,15 +144,14 @@ a:hover {
 .illustration {
     width: 50%;
     height: 100%;
-    background: white;  
+    background: white;
     background-repeat: no-repeat;
 }
 
 //    Illustrasjoner
-
 .eventyr-ill {
-//    display: flex;
-//    position: absolute;
+    //    display: flex;
+    //    position: absolute;
     height: 100%;
     width: 100%;
     background-repeat: no-repeat;
@@ -164,14 +164,10 @@ a:hover {
     display: block;
 }
 
-
 //#kappat:hover ~ #kappat-ill {
 //    
 //}
-
-
 //    Bkgrunn
-
 .parallax {
     position: absolute;
     width: 100%;
@@ -232,16 +228,25 @@ a:hover {
     background-image: url(../img/background_layers/8.svg);
 }
 
-
-
 //    Animations
-
 @keyframes fade-in {
-    from {opacity: 0};
-    to {opacity: 1};
+    from {
+        opacity: 0
+    }
+    ;
+    to {
+        opacity: 1
+    }
+    ;
 }
 
 @keyframes fade-out {
-    from {opacity: 1};
-    to {opacity: 0};
+    from {
+        opacity: 1
+    }
+    ;
+    to {
+        opacity: 0
+    }
+    ;
 }
