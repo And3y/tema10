@@ -9,14 +9,57 @@
 
 //                                              BY Team-AA
 
-var intro = document.querySelectorAll('.intro');
-var first = document.querySelectorAll('.first-group');
-var second = document.querySelectorAll('.second-group');
-var third = document.querySelectorAll('.third-group');
-var tekstOne = document.getElementById('tekst1');
-var tekstTwo = document.getElementById('tekst2');
-var info = document.getElementById('infogfx');
-var cta = document.getElementById('call-to-action');
+var intro       = document.querySelectorAll('.intro');
+var first       = document.querySelectorAll('.first-group');
+var second      = document.querySelectorAll('.second-group');
+var third       = document.querySelectorAll('.third-group');
+var tekstOne    = document.getElementById('tekst1');
+var tekstTwo    = document.getElementById('tekst2');
+var info        = document.getElementById('infogfx');
+var cta         = document.getElementById('call-to-action');
+
+var kappat      = document.getElementById('kappat');
+var bruse       = document.getElementById('bruse');
+var soria       = document.getElementById('soria');
+var herreper    = document.getElementById('herreper');
+var kari        = document.getElementById('kari');
+
+var illu        = document.querySelector('.illustration');
+
+var illustrations = ['../img/eventyr/askeladden_trollet.svg', '../img/eventyr/bukkenebruse.svg'] 
+
+var lol = document.querySelectorAll('.lol');
+
+for (var i = 0; i < lol.length; i++) {
+    lol[i].addEventListener('mouseover', function () {
+        illu.style.backgroundImage = 'url(/Users/Andreas/Documents/Interaksjonsdesign/Emne%203/Tema%2010/img/eventyr/askeladden_trollet.svg)';
+    });
+}
+
+//background-image: url(../img/eventyr/askeladden_trollet.svg)
+
+//
+//var i=0,
+//  tagList = document.getElementsByClassName('user-tag'),
+//  taglength = tagList.length;
+//
+//for( ; i < taglength ; i++){
+//    tagList[i].addEventListener('mousedown', function(event){
+//        this.classList.toggle('active');
+//    });
+//}
+
+
+//kappat.addEventListener('mouseover', addActive(kappatIll));
+//bruse.addEventListener('mouseover', addActive(bruseIll));
+//soria.addEventListener('mouseover', addActive(soriaIll));
+//herreper.addEventListener('mouseover', addActive(herreperIll));
+//kari.addEventListener('mouseover', addActive(kariIll));
+
+//function addActive(idName) {
+//    //idName.classList.add('active');
+//    illu.style.backgroundImage= 'url('+ illustrations[i] +')';
+//}
 
 //  Hide all text
 for (var i = 0; i < intro.length; i++) {

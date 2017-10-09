@@ -103,21 +103,71 @@ body {
     color: $white;
 }
 
+.message {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .story-wrap {
+    height: 80%;
     display: flex;
     align-items: center;
 }
 
 .story-list {
+    display: flex;
     width: 50%;
+    height: 100%;
+    align-items: center;
+    
+    a{
+        text-decoration: none;
+        color: $white;
+        font-size: 31px;
+        padding-bottom: 15px;
+        transition: .2s;
+        cursor: pointer;
+    }
+    li {
+        list-style: none;
+    }
+}
+
+a:hover {
+    color: $contrast;
+    transition: .5s;
 }
 
 .illustration {
     width: 50%;
-    height: 500px;
-    background: white;
-    align-items: stretch;
+    height: 100%;
+    background: white;  
+    background-repeat: no-repeat;
 }
+
+//    Illustrasjoner
+
+.eventyr-ill {
+//    display: flex;
+//    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid white;
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+
+//#kappat:hover ~ #kappat-ill {
+//    
+//}
 
 
 //    Bkgrunn
