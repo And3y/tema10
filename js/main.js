@@ -12,9 +12,11 @@
 var intro = document.querySelectorAll('.intro');
 var first = document.querySelectorAll('.first-group');
 var second = document.querySelectorAll('.second-group');
+var third = document.querySelectorAll('.third-group');
 var tekstOne = document.getElementById('tekst1');
 var tekstTwo = document.getElementById('tekst2');
-var info = document.querySelector('.infogfx');
+var info = document.getElementById('infogfx');
+var cta = document.getElementById('call-to-action');
 
 //  Hide all text
 for (var i = 0; i < intro.length; i++) {
@@ -59,6 +61,7 @@ function showDiv(divName) {
 // Get goin', son!
 
 hideDiv(info); //hide that sucker
+hideDiv(cta); //this one too!
 
 setTimeout(function () {
     fadeIn(first[1]);
@@ -110,8 +113,11 @@ setTimeout(function () {
     fadeIn(intro[6]);
 }, 17000);
 
-// call to action   FIIIXXXXX IIIITTTT 
-setTimeout()
+// call to action
+setTimeout(function () {
+    fadeTextOut(third);
+}, 20000);
+
 setTimeout(function() {
-    
-}, )
+    showDiv(cta);
+}, 20000);
