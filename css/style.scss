@@ -128,40 +128,46 @@ body {
         cursor: pointer;
     }
     li {
+        padding: 20px 0;
         list-style: none;
     }
 }
 
-li:hover+.illustration {
-    background-image: url(../img/eventyr/askeladden_trollet.svg);
-}
+.askeladden {}
 
 a:hover {
     color: $contrast;
-    transition: .5s;
 }
 
-.illustration {
-    width: 50%;
-    height: 100%;
-    background: white;
-    background-repeat: no-repeat;
+.askeladden:hover>.illustration {
+    background-image: url(../img/eventyr/askeladden_trollet.svg);
+    animation: fadein-story 1s forwards;
+    height: 60vh;
 }
 
-//    Illustrasjoner
-.eventyr-ill {
-    //    display: flex;
-    //    position: absolute;
-    height: 100%;
-    width: 100%;
+.bukkene:hover>.illustration2 {
+    background-image: url(../img/eventyr/bukkenebruse.svg);
+    animation: fadein-story 1s forwards;
+    height: 70vh;
+}
+
+.styleimg {
+    position: absolute;
+    right: 80px;
+    bottom: 0;
+    width: 60vw;
     background-repeat: no-repeat;
     background-position: center;
-    border: 1px solid white;
-    display: none;
+    background-size: contain;
 }
 
-.active {
-    display: block;
+@keyframes fadein-story {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 //#kappat:hover ~ #kappat-ill {

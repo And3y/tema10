@@ -2,7 +2,9 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-h1, p, h2 {
+h1,
+p,
+h2 {
   margin: 0;
   padding: 0; }
 
@@ -132,30 +134,44 @@ body {
     transition: .2s;
     cursor: pointer; }
   .story-list li {
+    padding: 20px 0;
     list-style: none; }
 
 a:hover {
-  color: #ffdc8c;
-  -webkit-transition: .5s;
-  -o-transition: .5s;
-  transition: .5s; }
+  color: #ffdc8c; }
 
-.illustration {
-  width: 50%;
-  height: 100%;
-  background: white;
-  background-repeat: no-repeat; }
+.askeladden:hover > .illustration {
+  background-image: url(../img/eventyr/askeladden_trollet.svg);
+  -webkit-animation: fadein-story 1s forwards;
+  animation: fadein-story 1s forwards;
+  height: 60vh; }
 
-.eventyr-ill {
-  height: 100%;
-  width: 100%;
+.bukkene:hover > .illustration2 {
+  background-image: url(../img/eventyr/bukkenebruse.svg);
+  -webkit-animation: fadein-story 1s forwards;
+  animation: fadein-story 1s forwards;
+  height: 70vh; }
+
+.styleimg {
+  position: absolute;
+  right: 80px;
+  bottom: 0;
+  width: 60vw;
   background-repeat: no-repeat;
   background-position: center;
-  border: 1px solid white;
-  display: none; }
+  background-size: contain; }
 
-.active {
-  display: block; }
+@-webkit-keyframes fadein-story {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadein-story {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 .parallax {
   position: absolute;
