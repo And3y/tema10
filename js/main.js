@@ -18,6 +18,60 @@ var tekstTwo    = document.getElementById('tekst2');
 var info        = document.getElementById('infogfx');
 var cta         = document.getElementById('call-to-action');
 
+var buttonWrap  = document.querySelectorAll('.button-wrap');
+
+var nextOne     = document.getElementById('next-1');
+var nextTwo     = document.getElementById('next-2');
+var nextThree   = document.getElementById('next-3');
+
+nextOne.addEventListener('click', nextScreenOne);
+nextTwo.addEventListener('click', nextScreenTwo);
+nextThree.addEventListener('click', nextScreenThree);
+
+function log(loggDis) {
+    console.log(loggDis);
+}
+
+function nextScreenOne() {
+    hideButton(buttonWrap[0]);
+    showButton(buttonWrap[1]);
+    fadeTextOut(second);
+    hideDiv(tekstOne);
+    showDiv(info);
+    log('fra 1 til 2');
+}
+
+function nextScreenTwo() {
+    hideButton(buttonWrap[1]);
+    showButton(buttonWrap[2]);
+    hideDiv(info);
+    showDiv(tekstTwo);
+    
+    setTimeout(function () {
+        fadeIn(intro[5]);
+    }, 500);
+
+    setTimeout(function () {
+        fadeIn(intro[6]);
+    }, 1500);
+    log('fra 2 til 3');
+}
+
+function nextScreenThree() {
+    hideButton(buttonWrap[2]);
+    showButton(buttonWrap[3]);
+    hideDiv(tekstTwo);
+    fadeTextOut(third);
+    showDiv(cta);
+    log('fra 3 til 4');
+}
+
+//  Hide the buttons to come *omnious music*
+for (var i = 0; i < buttonWrap.length; i++) {
+    buttonWrap[i].style.display = 'none';
+    buttonWrap[0].style.display = 'flex';
+}
+
 //  Hide all text
 for (var i = 0; i < intro.length; i++) {
     intro[i].style.opacity = '0';
@@ -28,7 +82,7 @@ first[0].classList.add('fade-in');
 
 // reveal another line
 function fadeIn(arrayName) {
-    arrayName.classList.remove('fade-out')
+    arrayName.classList.remove('fade-out');
     arrayName.classList.add('fade-in');
 }
 
@@ -47,15 +101,25 @@ function fadeOut(className) {
     className.classList.add('fade-out');
 }
 
-
 function hideDiv(divName) {
-    fadeOut(info)
+    fadeOut(divName)
     divName.style.display = 'none';
 }
 
 function showDiv(divName) {
     divName.style.display = 'block';
-    fadeIn(info);
+    fadeIn(divName);
+    
+}
+
+function hideButton(divName) {
+    divName.style.display = 'none';
+}
+
+function showButton(divName) {
+    //fadeIn(divName);
+    divName.style.display = 'flex';
+    //fadeIn(divName);
 }
 
 // Get goin', son!
@@ -84,40 +148,3 @@ setTimeout(function () {
 setTimeout(function () {
     fadeIn(second[2]);
 }, 7000)
-// Fade out second group
-setTimeout(function () {
-    fadeTextOut(second);
-}, 9000)
-
-// show the map
-//hide the first textgroup
-setTimeout(function () { 
-    hideDiv(tekstOne);
-}, 11000)
-    
-setTimeout(function () {
-    showDiv(info);
-}, 11000)
-
-setTimeout(function () {
-    hideDiv(info);
-}, 15000)
-
-// after map text
-
-setTimeout(function () {
-    fadeIn(intro[5]);
-}, 16000);
-
-setTimeout(function () {
-    fadeIn(intro[6]);
-}, 17000);
-
-// call to action
-setTimeout(function () {
-    fadeTextOut(third);
-}, 20000);
-
-setTimeout(function() {
-    showDiv(cta);
-}, 20000);
