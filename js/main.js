@@ -9,20 +9,18 @@
 
 //                                              BY Team-AA
 
-var intro       = document.querySelectorAll('.intro');
-var first       = document.querySelectorAll('.first-group');
-var second      = document.querySelectorAll('.second-group');
-var third       = document.querySelectorAll('.third-group');
-var tekstOne    = document.getElementById('tekst1');
-var tekstTwo    = document.getElementById('tekst2');
-var info        = document.getElementById('infogfx');
-var cta         = document.getElementById('call-to-action');
-
-var buttonWrap  = document.querySelectorAll('.button-wrap');
-
-var nextOne     = document.getElementById('next-1');
-var nextTwo     = document.getElementById('next-2');
-var nextThree   = document.getElementById('next-3');
+var intro      = document.querySelectorAll('.intro');
+var first      = document.querySelectorAll('.first-group');
+var second     = document.querySelectorAll('.second-group');
+var third      = document.querySelectorAll('.third-group');
+var buttonWrap = document.querySelectorAll('.button-wrap');
+var tekstOne   = document.getElementById('tekst1');
+var tekstTwo   = document.getElementById('tekst2');
+var info       = document.getElementById('infogfx');
+var cta        = document.getElementById('call-to-action');
+var nextOne    = document.getElementById('next-1');
+var nextTwo    = document.getElementById('next-2');
+var nextThree  = document.getElementById('next-3');
 
 nextOne.addEventListener('click', nextScreenOne);
 nextTwo.addEventListener('click', nextScreenTwo);
@@ -59,7 +57,6 @@ function nextScreenTwo() {
 
 function nextScreenThree() {
     hideButton(buttonWrap[2]);
-    showButton(buttonWrap[3]);
     hideDiv(tekstTwo);
     fadeTextOut(third);
     showDiv(cta);
@@ -109,7 +106,6 @@ function hideDiv(divName) {
 function showDiv(divName) {
     divName.style.display = 'block';
     fadeIn(divName);
-    
 }
 
 function hideButton(divName) {
@@ -117,9 +113,7 @@ function hideButton(divName) {
 }
 
 function showButton(divName) {
-    //fadeIn(divName);
     divName.style.display = 'flex';
-    //fadeIn(divName);
 }
 
 // Get goin', son!
