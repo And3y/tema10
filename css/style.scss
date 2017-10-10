@@ -25,6 +25,50 @@ body {
     background-color: rgba(64, 64, 64, 0.97);
 }
 
+//    Buttons
+.button-wrap {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 20px;
+    width: 100%;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 150px;
+    background: $contrast;
+    z-index: 1;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $black;
+    box-shadow: 2px 2px 0px #d6a941;
+    cursor: pointer;
+    user-select: none;
+    margin: 0 25px;
+    letter-spacing: 2px;
+}
+
+.button:hover {
+    background: #fddc90;
+}
+
+.button:active {
+    background: #e2b754;
+
+}
+
+#prev-1 {
+    opacity: .3;
+}
+
+#next-4 {
+    opacity: .3;
+}
+
 //    Tekst
 .tekst {
     position: absolute;
@@ -133,8 +177,6 @@ body {
     }
 }
 
-.askeladden {}
-
 a:hover {
     color: $contrast;
 }
@@ -192,9 +234,6 @@ a:hover {
     }
 }
 
-//#kappat:hover ~ #kappat-ill {
-//    
-//}
 //    Bkgrunn
 .parallax {
     position: absolute;

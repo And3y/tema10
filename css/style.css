@@ -19,6 +19,61 @@ body {
   padding: 50px;
   background-color: rgba(64, 64, 64, 0.97); }
 
+.button-wrap {
+  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  bottom: 20px;
+  width: 100%; }
+
+.button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 50px;
+  width: 150px;
+  background: #ffdc8c;
+  z-index: 1;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #404040;
+  -webkit-box-shadow: 2px 2px 0px #d6a941;
+  box-shadow: 2px 2px 0px #d6a941;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 0 25px;
+  letter-spacing: 2px; }
+
+.button:hover {
+  background: #fddc90; }
+
+.button:active {
+  background: #e2b754; }
+
+#prev-1 {
+  opacity: .3; }
+
+#next-4 {
+  opacity: .3; }
+
 .tekst {
   position: absolute;
   text-align: center;
