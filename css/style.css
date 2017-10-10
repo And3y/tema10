@@ -199,17 +199,39 @@ a:hover {
   background-image: url(../img/eventyr/askeladden_trollet.svg);
   -webkit-animation: fadein-story 1s forwards;
   animation: fadein-story 1s forwards;
-  height: 60vh; }
+  height: 60vh;
+  right: 80px; }
 
 .bukkene:hover > .illustration2 {
   background-image: url(../img/eventyr/bukkenebruse.svg);
   -webkit-animation: fadein-story 1s forwards;
   animation: fadein-story 1s forwards;
-  height: 70vh; }
+  height: 70vh;
+  right: 80px; }
+
+.soria:hover > .illustration3 {
+  background-image: url(../img/eventyr/soria.svg);
+  -webkit-animation: fadein-story 1s forwards;
+  animation: fadein-story 1s forwards;
+  height: 60vh;
+  right: 150px; }
+
+.herreper:hover > .illustration4 {
+  background-image: url(../img/eventyr/herreper.svg);
+  -webkit-animation: fadein-story 1s forwards;
+  animation: fadein-story 1s forwards;
+  height: 70vh;
+  right: 80px; }
+
+.kari:hover > .illustration5 {
+  background-image: url(../img/eventyr/kari.svg);
+  -webkit-animation: fadein-story 1s forwards;
+  animation: fadein-story 1s forwards;
+  height: 70vh;
+  right: 150px; }
 
 .styleimg {
   position: absolute;
-  right: 80px;
   bottom: 0;
   width: 60vw;
   background-repeat: no-repeat;
