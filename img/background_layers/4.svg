@@ -1,10 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4000.01 2498"><defs><style type="text/css">.cls-1{fill:#585450;}.cls-2{fill:#4c4f4a;}.cls-3{fill:#909385;}.cls-4{fill:#3d2614;}.cls-5{fill:#b79b86;}.cls-6{opacity:0.2;}.cls-7{isolation:isolate;}.cls-8{fill:none;}.cls-9{fill:#596246;}.cls-10,.cls-11,.cls-12,.cls-13,.cls-9{fill-rule:evenodd;}.cls-10{fill:#8b8e7c;}.cls-11{fill:#95c6c0;}.cls-12{fill:#e8e8e2;}.cls-13{fill:#c8e8e3;}
     #small-troll{
-    animation: trolls-away 10s ease-in-out forwards;}
+    animation: trolls-away 1.5s ease-in-out 1s forwards;
+    transform-origin: center;
+    }
     
     @keyframes trolls-away {
-    0% {opacity: 1;}
-    100% {opacity: 0;}
+    0% {
+        opacity: 1;}
+    
+    100% {
+        opacity: 0;}
     }
     
     </style></defs><title>4</title><g id="Layer_2" data-name="Layer 2">

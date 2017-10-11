@@ -9,18 +9,19 @@
 
 //                                              BY Team-AA
 
-var intro      = document.querySelectorAll('.intro');
-var first      = document.querySelectorAll('.first-group');
-var second     = document.querySelectorAll('.second-group');
-var third      = document.querySelectorAll('.third-group');
+var intro = document.querySelectorAll('.intro');
+var first = document.querySelectorAll('.first-group');
+var second = document.querySelectorAll('.second-group');
+var third = document.querySelectorAll('.third-group');
 var buttonWrap = document.querySelectorAll('.button-wrap');
-var tekstOne   = document.getElementById('tekst1');
-var tekstTwo   = document.getElementById('tekst2');
-var info       = document.getElementById('infogfx');
-var cta        = document.getElementById('call-to-action');
-var nextOne    = document.getElementById('next-1');
-var nextTwo    = document.getElementById('next-2');
-var nextThree  = document.getElementById('next-3');
+var tekstOne = document.getElementById('tekst1');
+var tekstTwo = document.getElementById('tekst2');
+var tekstThree = document.getElementById('tekst3');
+var info = document.getElementById('infogfx');
+var cta = document.getElementById('call-to-action');
+var nextOne = document.getElementById('next-1');
+var nextTwo = document.getElementById('next-2');
+var nextThree = document.getElementById('next-3');
 
 nextOne.addEventListener('click', nextScreenOne);
 nextTwo.addEventListener('click', nextScreenTwo);
@@ -35,6 +36,7 @@ function nextScreenOne() {
     showButton(buttonWrap[1]);
     fadeTextOut(second);
     hideDiv(tekstOne);
+    hideDiv(tekstTwo);
     showDiv(info);
     log('fra 1 til 2');
 }
@@ -43,21 +45,21 @@ function nextScreenTwo() {
     hideButton(buttonWrap[1]);
     showButton(buttonWrap[2]);
     hideDiv(info);
-    showDiv(tekstTwo);
-    
+    showDiv(tekstThree);
+
     setTimeout(function () {
         fadeIn(intro[5]);
     }, 500);
 
     setTimeout(function () {
         fadeIn(intro[6]);
-    }, 1500);
+    }, 2000);
     log('fra 2 til 3');
 }
 
 function nextScreenThree() {
     hideButton(buttonWrap[2]);
-    hideDiv(tekstTwo);
+    hideDiv(tekstThree);
     fadeTextOut(third);
     showDiv(cta);
     log('fra 3 til 4');
@@ -137,8 +139,8 @@ setTimeout(function () {
 
 setTimeout(function () {
     fadeIn(second[1]);
-}, 6000)
+}, 6500)
 
 setTimeout(function () {
     fadeIn(second[2]);
-}, 7000)
+}, 9000)
