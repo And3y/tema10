@@ -5,6 +5,16 @@
     <desc>Created with Sketch.</desc>
     <defs>
         <style type="text/css">
+            #polygon {
+                animation: slider-anim 3s 2s ease-in-out forwards;}
+            @keyframes slider-anim {
+                from {
+                    transform: translateY(0px);
+                }
+                to {
+                    transform: translateY(860px);
+                }
+            }
             
         </style></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -19,8 +29,7 @@
                     <text id="2017" font-family="WorkSans-SemiBold, Work Sans" font-size="31" font-weight="500" letter-spacing="1.54999948" fill="#FFDC8C">
                         <tspan x="40" y="900">2017</tspan>
                     </text>
-                    <polygon id="Polygon" fill="#FFDC8C" points="19.0699997 6 30.8559077 9.82947364 38.1399994 19.8551658 38.1399994 32.2476028 30.8559077 42.273295 19.0699997 46.1027686 7.28409172 42.273295 2.44249065e-15 32.2476028 2.22044605e-16 19.8551658 7.28409172 9.82947364">
-                    <animateMotion path="M 0 0 V 865 " keyTimes="0;1" dur="2s" begin="1s" fill="freeze" repeatCount="1" />
+                    <polygon id="polygon" fill="#FFDC8C" points="19.0699997 6 30.8559077 9.82947364 38.1399994 19.8551658 38.1399994 32.2476028 30.8559077 42.273295 19.0699997 46.1027686 7.28409172 42.273295 2.44249065e-15 32.2476028 2.22044605e-16 19.8551658 7.28409172 9.82947364">
                     </polygon>
                 </g>
             </g>

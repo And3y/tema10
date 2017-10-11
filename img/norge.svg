@@ -3,7 +3,109 @@
     <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
     <title>Norge</title>
     <desc>Created with Sketch.</desc>
-    <defs></defs>
+    <defs><style>
+        #vidda-stor { 
+            animation: scale-down .7s ease 2s forwards;
+            transform-origin: center;
+        }
+        
+        #toten-medium {
+            animation: scale-down .7s ease 2.1s forwards;
+            transform-origin: center;
+        }
+        
+        #vidda-nord-medium {
+            animation: scale-down .7s ease 2.2s forwards;
+            transform-origin: center;
+        }
+        
+        #aalesund-oest-medium {
+            animation: scale-down .7s ease 2.3s forwards;
+            transform-origin: center;
+        }
+        
+        #rogaland {
+            animation: scale-down .7s ease 2.4s forwards;
+            transform-origin: center;
+        }
+        
+        #bergen {
+            animation: scale-down .7s ease 2.5s forwards;
+            transform-origin: center;
+        }
+        
+        #mo-i-rana-medium {
+            animation: scale-down .7s ease 2.6s forwards;
+            transform-origin: center;
+        }
+        
+        #bodo {
+            animation: scale-down .7s ease 2.7s forwards;
+            transform-origin: center;
+        }
+        
+        #aalesund-small {
+            animation: scale-down .7s ease 2.8s forwards;
+            transform-origin: center;
+        }
+        
+        #senja {
+            animation: scale-down .7s ease 2.9s forwards;
+            transform-origin: center;
+        }
+        
+        #finnmark-sor {
+            animation: scale-down .7s ease 3s forwards;
+            transform-origin: center;
+        }
+        
+        #finnmark-vest {
+            animation: scale-down .7s ease 3.1s forwards;
+            transform-origin: center;
+        }
+        
+        #finnmark-ost {
+            animation: scale-down .7s ease 3.2s forwards;
+            transform-origin: center;
+        }
+        
+        #halden {
+            animation: scale-down .7s ease 3.3s forwards;
+            transform-origin: center;
+        }
+        
+        #oslo {
+            animation: scale-down .7s ease 3.4s forwards;
+            transform-origin: center;
+        }
+        
+        #mo-i-rana-small {
+            animation: scale-down .7s ease 3.5s forwards;
+            transform-origin: center;
+        }
+        
+        #rost {
+            animation: scale-down .7s ease 3.6s forwards;
+            transform-origin: center;
+        }
+        
+        #gol {
+            animation: scale-down-small .7s ease 2s forwards;
+            transform-origin: center;
+        }
+        
+        @keyframes scale-down {
+            0% {transform: scale(1);}
+            10% {transform: scale(1.05);}
+            100% {transform: scale(0);}
+        }
+        
+        @keyframes scale-down-small {
+            0% {transform: scale(1);}
+            10% {transform: scale(1.05);}
+            100% {transform: scale(0.7);}
+        }
+        </style></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="kartet" transform="translate(-362.000000, -77.000000)">
             <g id="Norge" transform="translate(362.000000, 67.000000)">
@@ -14,76 +116,58 @@
                         <polygon id="Fill-12" points="536.579384 21.7878928 499.540652 39.623704 501.142986 52.2869775 522.156041 49.4326376 539.785222 28.5653368"></polygon>
                     </g>
                     <g id="poly" transform="translate(0.000000, 55.000000)" fill="#FFDC8C">
-                        <polygon id="vidda-stor" points="113.077654 727.994516 83.8342558 718.469795 65.760842 693.533752 65.760842 662.711108 83.8342558 637.775065 113.077654 628.250344 142.321051 637.775065 160.394465 662.711108 160.394465 693.533752 142.321051 718.469795">
-                        <animate attributeName="fill" to="rgba(255, 220, 140, 0)" dur=".2s" begin="1.3s" fill="freeze"></animate>
+                        <polygon class="vidda-stor" id="vidda-stor" points="113.077654 727.994516 83.8342558 718.469795 65.760842 693.533752 65.760842 662.711108 83.8342558 637.775065 113.077654 628.250344 142.321051 637.775065 160.394465 662.711108 160.394465 693.533752 142.321051 718.469795">
                         </polygon>
                         
                         <polygon id="toten-medium" points="171.117679 719.728147 157.371368 715.250905 148.87568 703.529332 148.87568 689.040671 157.371368 677.319099 171.117679 672.841856 184.863991 677.319099 193.359678 689.040671 193.359678 703.529332 184.863991 715.250905">
-                        <animate attributeName="fill" to="rgba(255, 220, 140, 0)" dur=".2s" begin="1.4s" fill="freeze"></animate>
                         </polygon>
                         
                         <polygon id="vidda-nord-medium" points="135.241999 643.886291 121.495688 639.409048 113 627.687476 113 613.198815 121.495688 601.477242 135.241999 597 148.98831 601.477242 157.483998 613.198815 157.483998 627.687476 148.98831 639.409048">
-                        <animate attributeName="fill" to="rgba(255, 220, 140, 0)" dur=".2s" begin="1.5s" fill="freeze"></animate>
                         </polygon>
                         
                         <polygon id="aalesund-oest-medium" points="170.241999 580.886291 156.495688 576.409048 148 564.687476 148 550.198815 156.495688 538.477242 170.241999 534 183.98831 538.477242 192.483998 550.198815 192.483998 564.687476 183.98831 576.409048">
-                        <animate attributeName="fill" to="rgba(255, 220, 140, 0)" dur=".2s" begin="1.6s" fill="freeze"></animate>
                         </polygon>
                         
                         <polygon id="rogaland" points="66.241999 814.886291 52.4956876 810.409048 44 798.687476 44 784.198815 52.4956876 772.477242 66.241999 768 79.9883103 772.477242 88.483998 784.198815 88.483998 798.687476 79.9883103 810.409048">
-                        <animate attributeName="fill" to="rgba(255, 220, 140, 0)" dur=".2s" begin="1.7s" fill="freeze"></animate>
                         </polygon>
                         
                         <polygon id="bergen" points="22.241999 677.886291 8.49568764 673.409048 -7.81597009e-14 661.687476 -7.14772351e-14 647.198815 8.49568764 635.477242 22.241999 631 35.9883103 635.477242 44.483998 647.198815 44.483998 661.687476 35.9883103 673.409048">
-                        <animate attributeName="fill" to="rgba(255, 220, 140, 0)" dur=".2s" begin="1.8s" fill="freeze"></animate>
                         </polygon>
                         
                         <polygon id="mo-i-rana-medium" points="211.241999 447.886291 197.495688 443.409048 189 431.687476 189 417.198815 197.495688 405.477242 211.241999 401 224.98831 405.477242 233.483998 417.198815 233.483998 431.687476 224.98831 443.409048">
-                        <animate attributeName="fill" to="rgba(255, 220, 140, 0)" dur=".2s" begin="1.9s" fill="freeze"></animate>
                         </polygon>
                         
                         <polygon id="bodo" points="281.241999 315.886291 267.495688 311.409048 259 299.687476 259 285.198815 267.495688 273.477242 281.241999 269 294.98831 273.477242 303.483998 285.198815 303.483998 299.687476 294.98831 311.409048">
-                        <animate attributeName="fill" to="rgba(255, 220, 140, 0)" dur=".2s" begin="2s" fill="freeze"></animate>
                         </polygon>
                         
                         <polygon id="gol" points="137.53787 744.422968 127.90475 741.285413 121.951155 733.071187 121.951155 722.917845 127.90475 714.703619 137.53787 711.566064 147.170989 714.703619 153.124584 722.917845 153.124584 733.071187 147.170989 741.285413">
-                        <animate attributeName="fill" to="rgba(255, 220, 140, 1)" dur=".2s" begin="2.1s" fill="freeze"></animate>
                         </polygon>
                         
                         <polygon id="aalesund-small" points="123.490291 605.954588 113.857172 602.817033 107.903577 594.602807 107.903577 584.449465 113.857172 576.235239 123.490291 573.097684 133.123411 576.235239 139.077006 584.449465 139.077006 594.602807 133.123411 602.817033">
-                        <animate attributeName="fill" to="rgba(255, 220, 140, 0)" dur=".2s" begin="2.2s" fill="freeze"></animate>
                         </polygon>
                         
                         <polygon id="senja" points="391.163847 113.101032 376.714168 108.3947 367.783776 96.0733608 367.783776 80.8433483 376.714168 68.5220094 391.163847 63.8156767 405.613526 68.5220094 414.543919 80.8433483 414.543919 96.0733608 405.613526 108.3947">
-                        <animate attributeName="fill" to="rgba(255, 220, 140, 0)" dur=".2s" begin="2.3s" fill="freeze"></animate>
                         </polygon>
                         
                         <polygon id="finnmark-sor" points="561.4881 138.917171 538.937214 131.572235 525 112.342942 525 88.574229 538.937214 69.3449362 561.4881 62 584.038985 69.3449362 597.976199 88.574229 597.976199 112.342942 584.038985 131.572235">
-                        <animate attributeName="fill" to="rgba(255, 220, 140, 0)" dur=".2s" begin="2.4s" fill="freeze"></animate>
                         </polygon>
                         
                         <polygon id="finnmark-vest" points="535.4881 101.917171 512.937214 94.5722347 499 75.342942 499 51.574229 512.937214 32.3449362 535.4881 25 558.038985 32.3449362 571.976199 51.574229 571.976199 75.342942 558.038985 94.5722347">
-                        <animate attributeName="fill" to="rgba(255, 220, 140, 0)" dur=".2s" begin="2.5s" fill="freeze"></animate>
                         </polygon>
                         
                         <polygon id="finnmark-ost" points="595.4881 76.9171709 572.937214 69.5722347 559 50.342942 559 26.574229 572.937214 7.34493625 595.4881 -3.41060513e-13 618.038985 7.34493625 631.976199 26.574229 631.976199 50.342942 618.038985 69.5722347">
-                        <animate attributeName="fill" to="rgba(255, 220, 140, 0)" dur=".2s" begin="2.6s" fill="freeze"></animate>
                         </polygon>
                         
                         <polygon id="halden" points="199.690036 720.642678 192.465196 718.289511 188 712.128842 188 704.513836 192.465196 698.353166 199.690036 696 206.914875 698.353166 211.380072 704.513836 211.380072 712.128842 206.914875 718.289511">
-                        <animate attributeName="fill" to="rgba(255, 220, 140, 0)" dur=".2s" begin="2.7s" fill="freeze"></animate>
                         </polygon>
                         
                         <polygon id="oslo" points="170.690036 767.642678 163.465196 765.289511 159 759.128842 159 751.513836 163.465196 745.353166 170.690036 743 177.914875 745.353166 182.380072 751.513836 182.380072 759.128842 177.914875 765.289511">
-                        <animate attributeName="fill" to="rgba(255, 220, 140, 0)" dur=".2s" begin="2.8s" fill="freeze"></animate>
                         </polygon>
                         
                         <polygon id="mo-i-rana-small" points="196.855293 459.271982 189.630454 456.918816 185.165258 450.758146 185.165258 443.14314 189.630454 436.982471 196.855293 434.629304 204.080133 436.982471 208.545329 443.14314 208.545329 450.758146 204.080133 456.918816">
-                        <animate attributeName="fill" to="rgba(255, 220, 140, 0)" dur=".2s" begin="2.85s" fill="freeze"></animate>
                         </polygon>
                         
                         <polygon id="rost" points="303.382762 156.519084 296.157923 154.165917 291.692727 148.005248 291.692727 140.390242 296.157923 134.229572 303.382762 131.876406 310.607602 134.229572 315.072798 140.390242 315.072798 148.005248 310.607602 154.165917">
-                        <animate attributeName="fill" to="rgba(255, 220, 140, 0)" dur=".2s" begin="2.9s" fill="freeze"></animate>
                         </polygon>
                     </g>
                 </g>
