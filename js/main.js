@@ -9,19 +9,19 @@
 
 //                                              BY Team-AA
 
-var intro      = document.querySelectorAll('.intro');
-var first      = document.querySelectorAll('.first-group');
-var second     = document.querySelectorAll('.second-group');
-var third      = document.querySelectorAll('.third-group');
+var intro = document.querySelectorAll('.intro');
+var first = document.querySelectorAll('.first-group');
+var second = document.querySelectorAll('.second-group');
+var third = document.querySelectorAll('.third-group');
 var buttonWrap = document.querySelectorAll('.button-wrap');
-var tekstOne   = document.getElementById('tekst1');
-var tekstTwo   = document.getElementById('tekst2');
+var tekstOne = document.getElementById('tekst1');
+var tekstTwo = document.getElementById('tekst2');
 var tekstThree = document.getElementById('tekst3');
-var info       = document.getElementById('infogfx');
-var cta        = document.getElementById('call-to-action');
-var nextOne    = document.getElementById('next-1');
-var nextTwo    = document.getElementById('next-2');
-var nextThree  = document.getElementById('next-3');
+var info = document.getElementById('infogfx');
+var cta = document.getElementById('call-to-action');
+var nextOne = document.getElementById('next-1');
+var nextTwo = document.getElementById('next-2');
+var nextThree = document.getElementById('next-3');
 
 nextOne.addEventListener('click', nextScreenOne);
 nextTwo.addEventListener('click', nextScreenTwo);
@@ -133,6 +133,7 @@ function showButton(divName) {
 hideDiv(info); //hide that sucker
 hideDiv(cta); //this one too!
 
+
 setTimeout(function () {
     fadeIn(first[1]);
 }, 2000)
@@ -158,3 +159,27 @@ setTimeout(function () {
 setTimeout(function () {
     nextOne.classList.add('btn-animation');
 }, 13000)
+
+
+//sound
+var audio = new Audio('alarm.mp3');
+playAudio();
+
+var playBtn = document.getElementById('on');
+var pauseBtn = document.getElementById('off');
+
+playBtn.addEventListener('click', function offBtn() {
+    audio.pause();
+    playBtn.classList.toggle('hidden');
+    pauseBtn.classList.toggle('hidden');
+});
+pauseBtn.addEventListener('click', function onBtn() {
+    audio.play();
+    pauseBtn.classList.toggle('hidden');
+    playBtn.classList.toggle('hidden');
+});
+
+function playAudio() {
+    audio.play();
+
+}

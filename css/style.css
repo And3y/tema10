@@ -19,6 +19,17 @@ body {
   padding: 50px;
   background-color: rgba(64, 64, 64, 0.97); }
 
+.sound {
+  position: absolute;
+  right: 20px;
+  bottom: 25px;
+  z-index: 1;
+  height: 30px;
+  width: 30px; }
+
+.hidden {
+  display: none; }
+
 .button-wrap {
   position: absolute;
   display: -webkit-box;

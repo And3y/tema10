@@ -25,6 +25,20 @@
         background-color: rgba(64, 64, 64, 0.97);
     }
     
+    //    Sound
+    .sound {
+        position: absolute;
+        right: 20px;
+        bottom: 25px;
+        z-index: 1;
+        height: 30px;
+        width: 30px;
+    }
+    
+    .hidden {
+        display: none;
+    }
+    
     //    Button
     .button-wrap {
         position: absolute;
