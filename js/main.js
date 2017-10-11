@@ -162,7 +162,7 @@ setTimeout(function () {
 
 
 //sound
-var audio = new Audio('alarm.mp3');
+var audio = new Audio('audio/ole_bull_sigrids_sang.mp3');
 playAudio();
 
 var playBtn = document.getElementById('on');
