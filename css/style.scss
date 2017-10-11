@@ -57,12 +57,12 @@
         animation-play-state: paused;
     }
     
-    .button:active {
-        background: #e2b754;
-    }
-    
     .btn-animation {
         animation: btn-shake 0.2s ease infinite;
+    }
+    
+    .button:active {
+        background: #e2b754;
     }
     
     #prev-1 {

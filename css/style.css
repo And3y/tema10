@@ -67,12 +67,12 @@ body {
   -webkit-animation-play-state: paused;
   animation-play-state: paused; }
 
-.button:active {
-  background: #e2b754; }
-
 .btn-animation {
   -webkit-animation: btn-shake 0.2s ease infinite;
   animation: btn-shake 0.2s ease infinite; }
+
+.button:active {
+  background: #e2b754; }
 
 #prev-1 {
   opacity: .3; }
