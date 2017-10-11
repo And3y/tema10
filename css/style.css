@@ -63,10 +63,16 @@ body {
   letter-spacing: 2px; }
 
 .button:hover {
-  background: #fddc90; }
+  background: #fddc90;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused; }
 
 .button:active {
   background: #e2b754; }
+
+.btn-animation {
+  -webkit-animation: btn-shake 0.2s ease infinite;
+  animation: btn-shake 0.2s ease infinite; }
 
 #prev-1 {
   opacity: .3; }
@@ -197,36 +203,36 @@ a:hover {
 
 .askeladden:hover > .illustration {
   background-image: url(../img/eventyr/askeladden_trollet.svg);
-  -webkit-animation: fadein-story 1s forwards;
-  animation: fadein-story 1s forwards;
+  -webkit-animation: fade-in 1s forwards;
+  animation: fade-in 1s forwards;
   height: 60vh;
   right: 80px; }
 
 .bukkene:hover > .illustration2 {
   background-image: url(../img/eventyr/bukkenebruse.svg);
-  -webkit-animation: fadein-story 1s forwards;
-  animation: fadein-story 1s forwards;
+  -webkit-animation: fade-in 1s forwards;
+  animation: fade-in 1s forwards;
   height: 70vh;
   right: 80px; }
 
 .soria:hover > .illustration3 {
   background-image: url(../img/eventyr/soria.svg);
-  -webkit-animation: fadein-story 1s forwards;
-  animation: fadein-story 1s forwards;
+  -webkit-animation: fade-in 1s forwards;
+  animation: fade-in 1s forwards;
   height: 60vh;
   right: 150px; }
 
 .herreper:hover > .illustration4 {
   background-image: url(../img/eventyr/herreper.svg);
-  -webkit-animation: fadein-story 1s forwards;
-  animation: fadein-story 1s forwards;
+  -webkit-animation: fade-in 1s forwards;
+  animation: fade-in 1s forwards;
   height: 70vh;
   right: 80px; }
 
 .kari:hover > .illustration5 {
   background-image: url(../img/eventyr/kari.svg);
-  -webkit-animation: fadein-story 1s forwards;
-  animation: fadein-story 1s forwards;
+  -webkit-animation: fade-in 1s forwards;
+  animation: fade-in 1s forwards;
   height: 70vh;
   right: 150px; }
 
@@ -238,17 +244,17 @@ a:hover {
   background-position: center;
   background-size: contain; }
 
-@-webkit-keyframes fadein-story {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
+.placeholder-image {
+  background-image: url(../img/eventyr/askeladden_trollet.svg);
+  background-repeat: no-repeat;
+  height: 60vh;
+  bottom: 0;
+  right: 40px;
+  position: absolute;
+  width: 60vw; }
 
-@keyframes fadein-story {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
+.story-list:hover + .placeholder-image {
+  display: none; }
 
 .parallax {
   position: absolute;
@@ -322,3 +328,25 @@ a:hover {
     opacity: 1; }
   to {
     opacity: 0; } }
+
+@-webkit-keyframes btn-shake {
+  0% {
+    -webkit-transform: rotate(1deg);
+    transform: rotate(1deg); }
+  50% {
+    -webkit-transform: rotate(-1deg);
+    transform: rotate(-1deg); }
+  100% {
+    -webkit-transform: rotate(1deg);
+    transform: rotate(1deg); } }
+
+@keyframes btn-shake {
+  0% {
+    -webkit-transform: rotate(1deg);
+    transform: rotate(1deg); }
+  50% {
+    -webkit-transform: rotate(-1deg);
+    transform: rotate(-1deg); }
+  100% {
+    -webkit-transform: rotate(1deg);
+    transform: rotate(1deg); } }

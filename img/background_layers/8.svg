@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4002.13 2498"><defs><style>.cls-1{isolation:isolate;}.cls-2{fill:#424735;}.cls-10,.cls-11,.cls-2,.cls-3,.cls-4,.cls-5,.cls-6,.cls-7,.cls-8,.cls-9{fill-rule:evenodd;}.cls-3{fill:#705f47;}.cls-4{fill:#555759;}.cls-5,.cls-7{fill:#070707;}.cls-5,.cls-6{opacity:0.2;}.cls-6{fill:#1f2021;}.cls-10,.cls-11,.cls-7{opacity:0.3;}.cls-8{fill:#828282;}.cls-10,.cls-9{fill:#0a0a0a;}.cls-9{opacity:0.4;}.cls-11{fill:#121314;}.cls-12{fill:none;}.cls-13{fill:#5b4f40;}.cls-14{fill:#402f1e;}.cls-15{fill:#725443;}.cls-16{fill:#242624;}.cls-17{fill:#2b2f2f;}.cls-18{fill:#373936;}.cls-19{fill:#222224;}.cls-20{fill:#4d4d4f;}.cls-21{fill:#212222;}.cls-22{fill:#483d2a;}.cls-23{fill:#80623e;}.cls-24{fill:#6b4d2b;}.cls-25{fill:#3d2614;}.cls-26{fill:#202020;opacity:0.42;}
     
     #troll_gubbe, #shadow_body, #shadow_stav{
-    animation: trolls-away 1s ease-in-out 10s forwards;
+    animation: trolls-away 1s ease-in-out 11s forwards;
     transform-origin: center;
     }
     

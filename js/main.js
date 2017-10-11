@@ -39,6 +39,11 @@ function nextScreenOne() {
     hideDiv(tekstTwo);
     showDiv(info);
     log('fra 1 til 2');
+
+    setTimeout(function () {
+        nextTwo.classList.add('btn-animation');
+    }, 7000)
+
 }
 
 function nextScreenTwo() {
@@ -55,6 +60,11 @@ function nextScreenTwo() {
         fadeIn(intro[6]);
     }, 2000);
     log('fra 2 til 3');
+
+    setTimeout(function () {
+        nextThree.classList.add('btn-animation');
+    }, 5000)
+
 }
 
 function nextScreenThree() {
@@ -130,17 +140,21 @@ setTimeout(function () {
 // fade out first group
 setTimeout(function () {
     fadeTextOut(first);
-}, 4000)
+}, 5000)
 
 // start of second group
 setTimeout(function () {
     fadeIn(second[0]);
-}, 5000)
+}, 6000)
 
 setTimeout(function () {
     fadeIn(second[1]);
-}, 6500)
+}, 7500)
 
 setTimeout(function () {
     fadeIn(second[2]);
-}, 9000)
+}, 10000)
+
+setTimeout(function () {
+    nextOne.classList.add('btn-animation');
+}, 13000)

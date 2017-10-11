@@ -1,318 +1,336 @@
-$black: #404040;
-$white: #f2f2f2;
-$contrast: #ffdc8c;
-* {
-    box-sizing: border-box;
-}
-
-h1,
-p,
-h2 {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Work Sans', sans-serif;
-}
-
-.wrapper {
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    position: absolute;
-    padding: 50px;
-    background-color: rgba(64, 64, 64, 0.97);
-}
-
-//    Buttons
-.button-wrap {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    bottom: 20px;
-    width: 100%;
-}
-
-.button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    width: 150px;
-    background: $contrast;
-    z-index: 1;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: $black;
-    box-shadow: 2px 2px 0px #d6a941;
-    cursor: pointer;
-    user-select: none;
-    margin: 0 25px;
-    letter-spacing: 2px;
-}
-
-.button:hover {
-    background: #fddc90;
-}
-
-.button:active {
-    background: #e2b754;
-}
-
-#prev-1 {
-    opacity: .3;
-}
-
-#next-4 {
-    opacity: .3;
-}
-
-//    Tekst
-.tekst {
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    top: 20%;
-}
-
-.intro {
-    font-weight: 500;
-    color: $white;
-    text-shadow: 1px 1px 2px $black;
-    text-align: center;
-    letter-spacing: 1.5px;
-}
-
-.fade-in {
-    animation: fade-in 1s ease-in-out forwards;
-}
-
-.fade-out {
-    animation: fade-out 1s ease-in-out forwards;
-}
-
-//    Kartet
-.infogfx {
-    position: absolute;
-    padding: 50px;
-    background-color: rgba(64, 64, 64, 0.97);
-}
-
-.norge {
-    background-image: url(../img/norge.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 90%;
-    width: 90%;
-    position: absolute;
-}
-
-.infotext {
-    color: $white;
-    font-size: 31px;
-    letter-spacing: 0.5px;
-    font-weight: 500;
-    position: absolute;
-}
-
-.kontrast {
-    color: $contrast;
-}
-
-.slider {
-    background-image: url(../img/slider.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 90%;
-    width: 160px;
-    right: 5%;
-    position: absolute;
-}
-
-// Call to action
-#call-to-action {
-    display: flex;
-}
-
-.action {
-    width: 100%;
-    text-align: center;
-    font-size: 42px;
-    font-weight: 600;
-    color: $white;
-}
-
-.message {
-    height: 20%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.story-wrap {
-    height: 80%;
-    display: flex;
-    align-items: center;
-}
-
-.story-list {
-    display: flex;
-    width: 50%;
-    height: 100%;
-    align-items: center;
-    a {
-        text-decoration: none;
+    $black: #404040;
+    $white: #f2f2f2;
+    $contrast: #ffdc8c;
+    * {
+        box-sizing: border-box;
+    }
+    
+    h1,
+    p,
+    h2 {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-family: 'Work Sans', sans-serif;
+    }
+    
+    .wrapper {
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        position: absolute;
+        padding: 50px;
+        background-color: rgba(64, 64, 64, 0.97);
+    }
+    
+    //    Button
+    .button-wrap {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        bottom: 20px;
+        width: 100%;
+    }
+    
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 150px;
+        background: $contrast;
+        z-index: 1;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: $black;
+        box-shadow: 2px 2px 0px #d6a941;
+        cursor: pointer;
+        user-select: none;
+        margin: 0 25px;
+        letter-spacing: 2px;
+    }
+    
+    .button:hover {
+        background: #fddc90;
+        animation-play-state: paused;
+    }
+    
+    .button:active {
+        background: #e2b754;
+    }
+    
+    .btn-animation {
+        animation: btn-shake 0.2s ease infinite;
+    }
+    
+    #prev-1 {
+        opacity: .3;
+    }
+    
+    #next-4 {
+        opacity: .3;
+    }
+    
+    //    Tekst
+    .tekst {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: 20%;
+    }
+    
+    .intro {
+        font-weight: 500;
+        color: $white;
+        text-shadow: 1px 1px 2px $black;
+        text-align: center;
+        letter-spacing: 1.5px;
+    }
+    
+    .fade-in {
+        animation: fade-in 1s ease-in-out forwards;
+    }
+    
+    .fade-out {
+        animation: fade-out 1s ease-in-out forwards;
+    }
+    
+    //    Kartet
+    .infogfx {
+        position: absolute;
+        padding: 50px;
+        background-color: rgba(64, 64, 64, 0.97);
+    }
+    
+    .norge {
+        background-image: url(../img/norge.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 90%;
+        width: 90%;
+        position: absolute;
+    }
+    
+    .infotext {
         color: $white;
         font-size: 31px;
-        padding-bottom: 15px;
-        transition: .2s;
-        cursor: pointer;
+        letter-spacing: 0.5px;
+        font-weight: 500;
+        position: absolute;
     }
-    li {
-        padding: 20px 0;
-        list-style: none;
+    
+    .kontrast {
+        color: $contrast;
     }
-}
-
-a:hover {
-    color: $contrast;
-}
-
-.askeladden:hover>.illustration {
-    background-image: url(../img/eventyr/askeladden_trollet.svg);
-    animation: fadein-story 1s forwards;
-    height: 60vh;
-    right: 80px;
-}
-
-.bukkene:hover>.illustration2 {
-    background-image: url(../img/eventyr/bukkenebruse.svg);
-    animation: fadein-story 1s forwards;
-    height: 70vh;
-    right: 80px;
-}
-
-.soria:hover>.illustration3 {
-    background-image: url(../img/eventyr/soria.svg);
-    animation: fadein-story 1s forwards;
-    height: 60vh;
-    right: 150px;
-}
-
-.herreper:hover>.illustration4 {
-    background-image: url(../img/eventyr/herreper.svg);
-    animation: fadein-story 1s forwards;
-    height: 70vh;
-    right: 80px;
-}
-
-.kari:hover>.illustration5 {
-    background-image: url(../img/eventyr/kari.svg);
-    animation: fadein-story 1s forwards;
-    height: 70vh;
-    right: 150px;
-}
-
-.styleimg {
-    position: absolute;
-    bottom: 0;
-    width: 60vw;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-}
-
-@keyframes fadein-story {
-    from {
-        opacity: 0;
+    
+    .slider {
+        background-image: url(../img/slider.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 90%;
+        width: 160px;
+        right: 5%;
+        position: absolute;
     }
-    to {
-        opacity: 1;
+    
+    // Call to action
+    #call-to-action {
+        display: flex;
     }
-}
-
-//    Bkgrunn
-.parallax {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    left: 0;
-}
-
-.background_wrapper {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    background-image: url(../img/background_layers/Sky.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.bgsame {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    width: 105vw;
-    height: 102vh;
-    left: -50px;
-    overflow: hidden;
-}
-
-.layer {
-    background-image: url(../img/background_layers/1.svg);
-}
-
-.layer1 {
-    background-image: url(../img/background_layers/2.svg);
-}
-
-.layer2 {
-    background-image: url(../img/background_layers/3.svg);
-}
-
-.layer3 {
-    background-image: url(../img/background_layers/4.svg);
-}
-
-.layer4 {
-    background-image: url(../img/background_layers/5.svg);
-}
-
-.layer5 {
-    background-image: url(../img/background_layers/6.svg);
-}
-
-.layer6 {
-    background-image: url(../img/background_layers/7.svg);
-}
-
-.layer7 {
-    background-image: url(../img/background_layers/8.svg);
-}
-
-//    Animations
-@keyframes fade-in {
-    from {
-        opacity: 0
+    
+    .action {
+        width: 100%;
+        text-align: center;
+        font-size: 42px;
+        font-weight: 600;
+        color: $white;
     }
-    ;
-    to {
-        opacity: 1
+    
+    .message {
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
-    ;
-}
-
-@keyframes fade-out {
-    from {
-        opacity: 1
+    
+    .story-wrap {
+        height: 80%;
+        display: flex;
+        align-items: center;
     }
-    ;
-    to {
-        opacity: 0
+    
+    .story-list {
+        display: flex;
+        width: 50%;
+        height: 100%;
+        align-items: center;
+        a {
+            text-decoration: none;
+            color: $white;
+            font-size: 31px;
+            padding-bottom: 15px;
+            transition: .2s;
+            cursor: pointer;
+        }
+        li {
+            padding: 20px 0;
+            list-style: none;
+        }
     }
-    ;
-}
+    
+    a:hover {
+        color: $contrast;
+    }
+    
+    .askeladden:hover>.illustration {
+        background-image: url(../img/eventyr/askeladden_trollet.svg);
+        animation: fade-in 1s forwards;
+        height: 60vh;
+        right: 80px;
+    }
+    
+    .bukkene:hover>.illustration2 {
+        background-image: url(../img/eventyr/bukkenebruse.svg);
+        animation: fade-in 1s forwards;
+        height: 70vh;
+        right: 80px;
+    }
+    
+    .soria:hover>.illustration3 {
+        background-image: url(../img/eventyr/soria.svg);
+        animation: fade-in 1s forwards;
+        height: 60vh;
+        right: 150px;
+    }
+    
+    .herreper:hover>.illustration4 {
+        background-image: url(../img/eventyr/herreper.svg);
+        animation: fade-in 1s forwards;
+        height: 70vh;
+        right: 80px;
+    }
+    
+    .kari:hover>.illustration5 {
+        background-image: url(../img/eventyr/kari.svg);
+        animation: fade-in 1s forwards;
+        height: 70vh;
+        right: 150px;
+    }
+    
+    .styleimg {
+        position: absolute;
+        bottom: 0;
+        width: 60vw;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    
+    .placeholder-image {
+        background-image: url(../img/eventyr/askeladden_trollet.svg);
+        background-repeat: no-repeat;
+        height: 60vh;
+        bottom: 0;
+        right: 40px;
+        position: absolute;
+        width: 60vw;
+    }
+    
+    .story-list:hover+.placeholder-image {
+        display: none;
+    }
+    
+    //    Bkgrunn
+    .parallax {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        left: 0;
+    }
+    
+    .background_wrapper {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background-image: url(../img/background_layers/Sky.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .bgsame {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        width: 105vw;
+        height: 102vh;
+        left: -50px;
+        overflow: hidden;
+    }
+    
+    .layer {
+        background-image: url(../img/background_layers/1.svg);
+    }
+    
+    .layer1 {
+        background-image: url(../img/background_layers/2.svg);
+    }
+    
+    .layer2 {
+        background-image: url(../img/background_layers/3.svg);
+    }
+    
+    .layer3 {
+        background-image: url(../img/background_layers/4.svg);
+    }
+    
+    .layer4 {
+        background-image: url(../img/background_layers/5.svg);
+    }
+    
+    .layer5 {
+        background-image: url(../img/background_layers/6.svg);
+    }
+    
+    .layer6 {
+        background-image: url(../img/background_layers/7.svg);
+    }
+    
+    .layer7 {
+        background-image: url(../img/background_layers/8.svg);
+    }
+    
+    //    Animations
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    @keyframes fade-out {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+    
+    @keyframes btn-shake {
+        0% {
+            transform: rotate(1deg);
+        }
+        50% {
+            transform: rotate(-1deg);
+        }
+        100% {
+            transform: rotate(1deg);
+        }
+    }
